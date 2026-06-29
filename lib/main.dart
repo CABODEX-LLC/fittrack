@@ -136,7 +136,24 @@ class DashboardPage extends StatelessWidget {
         const _SectionTitle("Today's workout"),
         const SizedBox(height: 12),
         _WorkoutCard(),
+        const SizedBox(height: 28),
+        const _BrandFooter(),
       ],
+    );
+  }
+}
+
+class _BrandFooter extends StatelessWidget {
+  const _BrandFooter();
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Text.rich(
+        TextSpan(children: const [
+          TextSpan(text: 'Crafted by ', style: TextStyle(color: AppColors.muted, fontSize: 12)),
+          TextSpan(text: 'Cabodex', style: TextStyle(color: AppColors.lime, fontSize: 12, fontWeight: FontWeight.w700)),
+        ]),
+      ),
     );
   }
 }
@@ -386,6 +403,8 @@ class _ComingSoon extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 40),
             child: Text(subtitle, textAlign: TextAlign.center, style: const TextStyle(color: AppColors.muted)),
           ),
+          const SizedBox(height: 24),
+          const _BrandFooter(),
         ],
       ),
     );
