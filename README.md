@@ -7,6 +7,10 @@ FitTrack shows how we approach mobile product design at Cabodex — a focused
 dashboard, clear data visualization, and a calm dark interface that stays
 readable while you move.
 
+<p align="center">
+  <img src="screenshots/home.png" alt="FitTrack dashboard" width="300" />
+</p>
+
 ## Features
 
 - **Activity rings** — Move / Exercise / Stand progress, drawn with a custom painter
